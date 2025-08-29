@@ -1,0 +1,70 @@
+.wrapper {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 780px;
+    width: 100%;
+    padding-top: 118px;
+    gap: 20px;
+    button {
+      grid-column: 2;
+      padding: 11px 40px;
+      //   justify-self: end; //это че
+      margin-left: auto; //chat gpt
+      background-color: #ffae33;
+      border-radius: 16px;
+      border: none;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .inp {
+      position: relative;
+      padding-top: 17px;
+      input {
+        width: 100%;
+        padding: 11px 0;
+      }
+
+      p {
+        background-color: #ffffff;
+        position: absolute;
+        font-weight: 600;
+        font-size: 12px;
+        top: 0;
+        left: 15px;
+        padding: 10px 4px;
+      }
+    }
+    .message {
+      display: block;
+      grid-column: 1 / -1;
+      input {
+        width: 100%;
+        height: 140px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    .grid {
+      grid-template-columns: 1fr;
+
+      button {
+        grid-column: 1;
+        width: 100%;
+      }
+
+      .message {
+        input {
+          height: auto;
+        }
+      }
+    }
+  }
+}

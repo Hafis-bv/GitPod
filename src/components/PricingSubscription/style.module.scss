@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  .subscription {
+    background-color: #ffffff;
+    margin-top: 92px;
+    margin-bottom: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 637px;
+    gap: 32px;
+    padding: 65px 36px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 100px #00000040;
+
+    h1 {
+      font-weight: 700;
+      font-size: 25px;
+      color: #000000;
+    }
+    button {
+      padding: 15px 32px;
+      width: 485px; //как блять эту хуйню сделать здесь если гап давать то неровно а спейс битвин чмо чыхыр
+      display: flex;
+      justify-content: space-between;
+      background-color: #d9d9d900;
+      border-radius: 12px;
+      border: solid 2px #ffae33;
+      cursor: pointer;
+      .plan {
+        color: #ffae33;
+        font-weight: 700;
+        font-size: 25px;
+      }
+      .price {
+        color: #ffae33;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+    .purchase {
+      padding: 12px 185px;
+      border-radius: 16px;
+      background-color: #ffae33;
+      font-weight: 700;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+//media я тут сыштыпдым с кнопками поэтому не могу сделать

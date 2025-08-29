@@ -13,6 +13,8 @@ const App = () => {
       <Info />
       <Enviroments />
       <Remote />
+      <Reviews />
+      <Brands />
     </>
   );
 };
