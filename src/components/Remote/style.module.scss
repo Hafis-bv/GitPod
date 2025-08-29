@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  text-align: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 72px;
+  }
+  .image {
+    border-radius: 14px;
+    width: 100%;
+  }
+  p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #12100cb2;
+    max-width: 877px;
+    margin-bottom: 32px;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btns {
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+}

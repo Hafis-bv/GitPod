@@ -1,0 +1,23 @@
+.text {
+  padding: 160px 0;
+  text-align: center;
+  p {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 64px;
+    color: #12100c;
+    span {
+      font-weight: 400;
+      color: #999795;
+      text-decoration: line-through;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .text {
+    p {
+      font-size: 43px;
+      line-height: 53px;
+    }
+  }
+}

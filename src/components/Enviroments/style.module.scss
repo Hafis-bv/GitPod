@@ -1,0 +1,70 @@
+.wrapper {
+  padding: 160px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .content {
+    max-width: 655px;
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #12100c;
+      margin-bottom: 8px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      color: #12100cb2;
+      margin-bottom: 140px;
+    }
+    .btns {
+      display: flex;
+      gap: 16px;
+      .prebuilds {
+        padding: 8px 18px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        background-color: #ffae33;
+        border-radius: 10.5px;
+        box-shadow: 0 1px 1px #0000001a;
+        border: none;
+        cursor: pointer;
+      }
+      .documentation {
+        padding: 8px 18px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        background-color: #ffb0ae;
+        border-radius: 10.5px;
+        box-shadow: 0 1px 1px #0000001a;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .content {
+      text-align: center;
+
+      .btns {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+}
