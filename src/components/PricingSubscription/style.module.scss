@@ -1,0 +1,69 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  .subscription {
+    background-color: #ffffff;
+    margin-top: 92px;
+    margin-bottom: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 65px 36px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 100px #00000040;
+
+    h1 {
+      font-weight: 700;
+      font-size: 25px;
+      color: #000000;
+    }
+    .month {
+      padding: 15px 32px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #d9d9d900;
+      border-radius: 12px;
+      border: solid 2px #ffae33;
+      cursor: pointer;
+      .plan {
+        color: #ffae33;
+        font-weight: 700;
+        font-size: 25px;
+      }
+      .price {
+        color: #ffae33;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+    .purchase {
+      width: 100% !important;
+      border-radius: 16px;
+      background-color: #ffae33;
+      font-weight: 700;
+      padding: 12px 20px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .subscription {
+    margin: 0 10px;
+    h1 {
+      font-size: 25px !important;
+      text-align: center;
+      line-height: 35px !important;
+    }
+
+    .plan,
+    .price {
+      font-size: 18px !important;
+    }
+  }
+}

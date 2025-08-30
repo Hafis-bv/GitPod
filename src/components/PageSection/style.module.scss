@@ -1,0 +1,29 @@
+.wrapper {
+  background-color: #ffae33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  h1 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 23px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .button {
+    color: #12100c;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 12px 50px;
+    border: none;
+  }
+}
