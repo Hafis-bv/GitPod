@@ -1,5 +1,4 @@
 import s from "./style.module.scss";
-import React from "react";
 
 const ContactInput = () => {
   return (

@@ -6,16 +6,17 @@ const Brands = () => {
   return (
     <div className="container">
       <div className={s.wrapper}>
-        <img src="time.png" alt="" />
+        {brands.map((brand) => (
+          <img
+            className={s.image}
+            src={brand.logo}
+            key={brand.id}
+            alt={brand.name}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
 export default Brands;
-
-//   <div className={s.wrapper}>
-//         {brands.map((brand) => (
-//           <img src={brand.logo} alt={brand.name} />
-//         ))}
-//       </div>

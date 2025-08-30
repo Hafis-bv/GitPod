@@ -1,6 +1,5 @@
 import s from "./style.module.scss";
 import reviews from "../DataBase/reviews.js";
-import React from "react";
 
 const Reviews = () => {
   return (
@@ -8,16 +7,16 @@ const Reviews = () => {
       <div className={s.wrapper}>
         <h1>Used by 400,000+ developers.</h1>
         <div className={s.reviews}>
-          {reviews.map((com) => (
-            <div className={s.review} key={com.id}>
-              <p>{com.title}</p>
+          {reviews.map((review) => (
+            <div className={s.review} key={review.id}>
+              <p>{review.title}</p>
               <div className={s.creator}>
                 <div className={s.icon}>
-                  <img src={com.icon} alt="hh" />
+                  <img src={review.userInfo.profile} alt="User profile" />
                 </div>
                 <div className={s.info}>
-                  <h3>{com.name}</h3>
-                  <p>{com.creator}</p>
+                  <h3>{review.userInfo.name}</h3>
+                  <p>{review.userInfo.job}</p>
                 </div>
               </div>
             </div>

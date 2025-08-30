@@ -1,14 +1,18 @@
 import React from "react";
-import s from "./style.module.scss";
-import PricingHero from "../../components/PricingHero/PricingHero";
 import PricingSubscription from "../../components/PricingSubscription/PricingSubscription";
+import PageSection from "../../components/PageSection/PageSection";
 
 const Pricing = () => {
   return (
-    <div>
-      <PricingHero />
+    <>
+      <PageSection
+        title={"Pricing"}
+        text={"Get more Gitpod, pay less."}
+        isButtonActive // ={true}
+        buttonText="Try now"
+      />
       <PricingSubscription />
-    </div>
+    </>
   );
 };
 

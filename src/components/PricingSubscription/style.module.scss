@@ -9,7 +9,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 637px;
     gap: 32px;
     padding: 65px 36px;
     border-radius: 20px;
@@ -20,9 +19,9 @@
       font-size: 25px;
       color: #000000;
     }
-    button {
+    .month {
       padding: 15px 32px;
-      width: 485px; //как блять эту хуйню сделать здесь если гап давать то неровно а спейс битвин чмо чыхыр
+      width: 100%;
       display: flex;
       justify-content: space-between;
       background-color: #d9d9d900;
@@ -41,10 +40,11 @@
       }
     }
     .purchase {
-      padding: 12px 185px;
+      width: 100% !important;
       border-radius: 16px;
       background-color: #ffae33;
       font-weight: 700;
+      padding: 12px 20px;
       font-size: 18px;
       border: none;
       cursor: pointer;
@@ -52,4 +52,18 @@
   }
 }
 
-//media я тут сыштыпдым с кнопками поэтому не могу сделать
+@media (max-width: 650px) {
+  .subscription {
+    margin: 0 10px;
+    h1 {
+      font-size: 25px !important;
+      text-align: center;
+      line-height: 35px !important;
+    }
+
+    .plan,
+    .price {
+      font-size: 18px !important;
+    }
+  }
+}

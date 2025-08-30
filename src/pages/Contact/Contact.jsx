@@ -1,13 +1,12 @@
-import React from "react";
-import ContactHero from "../../components/ContactHero/ContactHero";
 import ContactInput from "../../components/ContactInput/ContactInput";
+import PageSection from "../../components/PageSection/PageSection";
 
 const Contact = () => {
   return (
-    <div>
-      <ContactHero />
+    <>
+      <PageSection title={"Contact"} text={"Get in touch with us today!"} />
       <ContactInput />
-    </div>
+    </>
   );
 };
 

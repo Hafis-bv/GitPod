@@ -8,28 +8,21 @@ footer {
       font-weight: 700;
       font-size: 13px;
     }
-    .link {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      a {
-        text-decoration: none;
-        font-size: 13px;
-        font-weight: 400;
-        color: #12100cb2;
-      }
-    }
   }
   .info {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 32px;
+    padding: 32px 0;
+    border-top: 1px solid #ccc;
     .footerLogo {
       display: flex;
+      width: 100%;
+      align-items: center;
       gap: 3px;
       p {
         color: #12100cb2;
         font-size: 13px;
+        width: 100%;
         font-weight: 400;
       }
     }

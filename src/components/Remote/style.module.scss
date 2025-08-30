@@ -32,11 +32,12 @@
 
 @media (max-width: 650px) {
   h1 {
-    font-size: 30px;
+    font-size: 32px !important;
+    line-height: 42px !important;
     font-weight: 500;
   }
   p {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .btns {
     flex-direction: column;
